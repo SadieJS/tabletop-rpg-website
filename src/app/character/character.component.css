@@ -4,6 +4,7 @@
     margin-left: 83px;
     margin-top: 30px;
     width: 400px;
+    float: left;
 }
 .character-img{
     width: 245px;
@@ -20,5 +21,19 @@
     font-weight: 550;
 }
 .trait-score-item{
+    padding-top: 10px;
+}
+.right-char-panel{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 211px;
+}
+.skills{
+    margin-top: 30px;
+    padding-left: 25px;
+    font-size: 160%;
+}
+.skills-item{
     padding-top: 10px;
 }
