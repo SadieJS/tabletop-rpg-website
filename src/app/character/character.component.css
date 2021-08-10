@@ -27,7 +27,7 @@
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    width: 211px;
+    width: 400px;
 }
 .skills{
     margin-top: 30px;
@@ -36,4 +36,72 @@
 }
 .skills-item{
     padding-top: 10px;
+}
+.adv-battle-buttons{
+    display: flex;
+    flex-direction: row;
+}
+.adv-button{
+    outline: none;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    color: black;
+    border-color: black;
+    margin-right: 10px;
+}
+.adv-button:hover{
+    background-color:grey;
+}
+.adv-button:active{
+    border-color:black;
+}
+.battle-button{
+    outline: none;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    color: black;
+    border-color: black;
+}
+.battle-button:hover{
+    background-color: grey;
+}
+.battle-button:active{
+    border-color: black;
+}
+.btn-check:checked + .adv-button{
+    background-color: grey;
+    border-color: black !important;
+}
+.btn-check:checked + .battle-button{
+    background-color: grey;
+    border-color: black !important;
+}
+.add-skill-button{
+    color: black;
+    border-color:black;
+    outline: none;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    margin-left: 65px;
+    margin-top: 15px;
+}
+.add-skill-button:hover{
+    background-color: grey;
+}
+.add-skill-button:active{
+    border-color: black;
+}
+.skills-item-description{
+    font-size: 80%;
+    margin-left: 10px;
+}
+.delete-skill{
+    margin-left: 10px;
+}
+.list-of-skills-input{
+    border: 2px solid black;
+    margin-left: 5px;
+    width: 150px;
+    background-color: rgb(182, 175, 175);
+    border-radius: 5px;
 }

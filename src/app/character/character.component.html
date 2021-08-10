@@ -18,16 +18,80 @@
         <div class = "trait-score-item">Disciplines 1000</div>
     </div>
 </div>
-<div class = "right-char-panel flex container">
-    <span style = "font-weight: 500; font-size: 160%;">Adventuring / Battle</span>
-    <div class = "skills">
-        <div class = "skills-item">Skill 1</div>
-        <div class = "skills-item">Skill 2</div>
-        <div class = "skills-item">Skill 3</div>
-        <div class = "skills-item">Skill 4</div>
-        <div class = "skills-item">Skill 5</div>
-        <div class = "skills-item">Skill 6</div>
-        <div class = "skills-item">Skill 7</div>
-        <div class = "skills-item">Skill 8</div>
+<div class = "right-char-panel flex-container">
+    <div class = "adv-battle-buttons flex-container">
+        <div class = "btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary adv-button" for="btnradio1"
+            (click) = "adventuringActive()">Adventuring</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary battle-button" for="btnradio2"
+            (click) = "battleActive()">Battling</label>
+        </div>
+    </div>
+    <div *ngIf = "battleToggled" class = skills-section>
+        <button class = "btn btn-outline-primary add-skill-button">Create Skill</button>
+        <div style = "padding-top: 10px;">
+            <label for = "list-of-skills">Skills:</label>
+            <input class = "list-of-skills-input" name = "list-of-skills" type = "search">
+        </div>
+        <div class = "skills">
+            <div class = "skills-item">
+                Skill Name 1
+                <i class="bi bi-x delete-skill"></i>
+                <div class = "skills-item-description">
+                    Description
+                </div>
+            </div>
+            <div class = "skills-item">
+                Skill Name 2
+                <i class="bi bi-x delete-skill"></i>
+                <div class = "skills-item-description">
+                    Description
+                </div>
+            </div>
+            <div class = "skills-item">
+                Skill Name 3
+                <i class="bi bi-x delete-skill"></i>
+                <div class = "skills-item-description">
+                    Description
+                </div>
+            </div>
+            <div class = "skills-item">
+                Skill Name 4
+                <i class="bi bi-x delete-skill"></i>
+                <div class = "skills-item-description">
+                    Description
+                </div>
+            </div>
+            <div class = "skills-item">
+                Skill Name 5
+                <i class="bi bi-x delete-skill"></i>
+                <div class = "skills-item-description">
+                    Description
+                </div>
+            </div>
+            <div class = "skills-item">
+                Skill Name 6
+                <i class="bi bi-x delete-skill"></i>
+                <div class = "skills-item-description">
+                    Description
+                </div>
+            </div>
+            <div class = "skills-item">
+                Skill Name 7
+                <i class="bi bi-x delete-skill"></i>
+                <div class = "skills-item-description">
+                    Description
+                </div>
+            </div>
+            <div class = "skills-item">
+                Skill Name 8
+                <i class="bi bi-x delete-skill"></i>
+                <div class = "skills-item-description">
+                    Description
+                </div>
+            </div>
+        </div>
     </div>
 </div>
