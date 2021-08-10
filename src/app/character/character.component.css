@@ -1,0 +1,24 @@
+.left-char-panel{
+    display: flex;
+    flex-direction: column;
+    margin-left: 83px;
+    margin-top: 30px;
+    width: 400px;
+}
+.character-img{
+    width: 245px;
+}
+.top-stats{
+    font-size: 160%;
+    font-weight: 550;
+    padding-top: 20px;
+    padding-left: 65px;
+}
+.trait-scores{
+    text-align: left;
+    font-size: 160%;
+    font-weight: 550;
+}
+.trait-score-item{
+    padding-top: 10px;
+}
